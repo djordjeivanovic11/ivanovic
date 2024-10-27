@@ -34,6 +34,7 @@ const Hero: React.FC = () => {
           >
             {typedText}
             <span className="animate-blink">|</span>
+            
           </h1>
           <p
             className={`${robotoMono.className} max-w-[900px] mx-auto text-xl md:text-2xl mb-10 text-gray-200`}
