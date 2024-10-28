@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             <Link href="https://github.com/djordjeivanovic11" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors duration-300">
               <FaGithub size={24} />
             </Link>
-            <Link href="www.linkedin.com/in/djordje-ivanovic11" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors duration-300">
+            <Link href="https://www.linkedin.com/in/djordje-ivanovic11" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors duration-300">
               <FaLinkedin size={24} />
             </Link>
             <Link href="mailto:dorde_ivanovic@college.harvard.edu" className="hover:text-gray-400 transition-colors duration-300">
