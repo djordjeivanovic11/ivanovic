@@ -40,7 +40,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#1c0101] py-8 overflow-x-hidden">
+    <div className="min-h-screen flex flex-col items-center bg-[#1c0101] py-8 overflow-hidden">
       {/* Main About Section */}
       <motion.div 
         initial={{ opacity: 0, y: 50 }}

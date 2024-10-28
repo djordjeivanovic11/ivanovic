@@ -93,7 +93,7 @@ const AllProjects: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#1c0101] text-[#F5F5DC] mt-[80px] py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#1c0101] text-[#F5F5DC] mt-[80px] py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <h1 className={`${blackOpsOne.className} text-5xl sm:text-5xl mb-12 text-center`}>
           All Projects
