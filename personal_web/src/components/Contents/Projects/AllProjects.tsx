@@ -79,8 +79,8 @@ const AllProjects: React.FC = () => {
       frontendLink: '',
       backendLink: 'https://github.com/djordjeivanovic1/cs109_final',
       detailedDescription: 'A data science project that examines the relationship between Elon Musk\'s Twitter activity and stock market fluctuations. Used Python, Pandas, and Natural Language Processing to analyze tweet sentiment and correlate it with price movements of related stocks. Features include time series analysis, sentiment scoring, and statistical significance testing. Visualizations created with Matplotlib demonstrate clear patterns between social media influence and market behavior.',
-    }
-    ,{
+    },
+    {
       name: 'Boston Movie Analytics',
       link: '',
       description: 'Data analysis of Boston movie screenings and historical cinema trends.',
@@ -89,11 +89,10 @@ const AllProjects: React.FC = () => {
       backendLink: 'https://github.com/djordjeivanovic11/cs109_movies',
       detailedDescription: 'A data science project analyzing historical movie screening data from Boston theaters to uncover trends in cinema popularity, genre preferences, and seasonal patterns. Used Python with Pandas for data cleaning and analysis, and Matplotlib/Seaborn for creating insightful visualizations. Key findings include correlations between weather patterns and attendance, genre popularity shifts over decades, and the impact of major historical events on movie-going habits. The project demonstrates skills in data wrangling, statistical analysis, and deriving meaningful insights from complex datasets.'
     }
-
   ];
 
   return (
-    <div className="min-h-screen bg-[#1c0101] text-[#F5F5DC] mt-[80px] py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="min-h-screen bg-[#1c0101] text-[#F5F5DC] mt-[80px] py-12 px-4 sm:px-6 lg:px-8 overflow-y-auto">
       <div className="max-w-7xl mx-auto">
         <h1 className={`${blackOpsOne.className} text-5xl sm:text-5xl mb-12 text-center`}>
           All Projects
