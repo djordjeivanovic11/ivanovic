@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-hidden bg-[#1c0101]">
       <body className={robotoMono.className}>
         <Navbar />
         {children}
