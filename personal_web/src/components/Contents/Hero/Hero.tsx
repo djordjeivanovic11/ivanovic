@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
   }, [fullName]);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
+    <div className="relative min-h-screen flex items-center justify-center bg-[#1c0101]">
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 md:px-0">
         <div className="text-center z-10">
           <h1
