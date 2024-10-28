@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react';
 import NavbarItem from './NavbarItem';
 import Link from 'next/link';
