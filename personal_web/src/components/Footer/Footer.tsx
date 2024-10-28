@@ -11,13 +11,13 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className={`text-sm ${robotoMono.className} mb-4 md:mb-0`}>
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Djordje Ivanovic. All rights reserved.
           </div>
           <div className="flex space-x-4">
             <Link href="https://github.com/djordjeivanovic11" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors duration-300">
               <FaGithub size={24} />
             </Link>
-            <Link href="https://linkedin.com/in/djordjeivanovic11" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors duration-300">
+            <Link href="www.linkedin.com/in/djordje-ivanovic11" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors duration-300">
               <FaLinkedin size={24} />
             </Link>
             <Link href="mailto:dorde_ivanovic@college.harvard.edu" className="hover:text-gray-400 transition-colors duration-300">

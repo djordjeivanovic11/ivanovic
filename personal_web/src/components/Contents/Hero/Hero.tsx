@@ -39,8 +39,7 @@ const Hero: React.FC = () => {
           <p
             className={`${robotoMono.className} max-w-[900px] mx-auto text-xl md:text-2xl mb-10 text-gray-200`}
           >
-            Welcome to my digital playground. I am a passionate developer,
-            problem solver, and lifelong learner. Explore my projects and let us
+            I am a driven by curiosity, love for technology and always looking for new challenges to tackle that can make a difference. Explore my projects and let us
             create something amazing together!
           </p>
           <button 

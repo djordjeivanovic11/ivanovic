@@ -15,7 +15,7 @@ const TimeBox: React.FC<TimeBoxProps> = ({ year, achievements }) => {
   }, []);
 
   if (!isClient) {
-    return null; // or a simple loading state
+    return null;
   }
 
   return (
@@ -25,18 +25,16 @@ const TimeBox: React.FC<TimeBoxProps> = ({ year, achievements }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       whileHover={{ scale: 1.05, rotateY: 5 }}
-      className="bg-gradient-to-br from-[#f7f1e3] to-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 mb-8 border-2 border-[#1c0101]"
+      className="bg-gradient-to-br from-[#f7f1e3] to-white p-4 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 mb-8 border-2 border-[#1c0101]"
     >
-      {/* Year Section */}
       <motion.h3 
-        className={`${blackOpsOne.className} text-5xl mb-6 text-[#1c0101] inline-block`}
+        className={`${blackOpsOne.className} text-3xl sm:text-5xl mb-4 sm:mb-6 text-[#1c0101] inline-block`}
         whileHover={{ scale: 1.1, color: '#3a0d0d' }}
       >
         {year}
       </motion.h3>
 
-      {/* Achievements List */}
-      <ul className="space-y-4">
+      <ul className="space-y-2 sm:space-y-4">
         {achievements.map((achievement, index) => (
           <li key={index}>
             <motion.div 
@@ -45,10 +43,10 @@ const TimeBox: React.FC<TimeBoxProps> = ({ year, achievements }) => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.5, ease: 'easeOut' }}
               whileHover={{ x: 10 }}
-              className={`${robotoMono.className} text-xl text-[#3a0d0d] flex items-start`}
+              className={`${robotoMono.className} text-lg sm:text-xl text-[#3a0d0d] flex items-start`}
             >
               <motion.span 
-                className="w-4 h-4 bg-[#1c0101] rounded-full mt-1.5 mr-4 flex-shrink-0"
+                className="w-3 h-3 sm:w-4 sm:h-4 bg-[#1c0101] rounded-full mt-1.5 mr-2 sm:mr-4 flex-shrink-0"
                 whileHover={{ scale: 1.2, backgroundColor: '#3a0d0d' }}
               />
               <span className="leading-relaxed">{achievement}</span>

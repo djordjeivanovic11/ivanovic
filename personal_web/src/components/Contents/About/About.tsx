@@ -6,11 +6,11 @@ import { blackOpsOne, robotoMono } from '@/app/fonts/fonts';
 import { motion } from 'framer-motion';
 import Timeline from './Timeline';
 import Skills from './Skills'; 
-import TheFuture from './TheFuture'; // Import the Future component
+import TheFuture from './TheFuture'; 
 
 const About: React.FC = () => {
   const [typedText, setTypedText] = useState('');
-  const introText = "Hello! I'm Djordje Ivanovic, a developer passionate about innovation.";
+  const introText = "Hello! I'm Djordje Ivanovic, a developer passionate about innovation and entrepreneurship.";
 
   useEffect(() => {
     let i = 0;
@@ -22,43 +22,43 @@ const About: React.FC = () => {
     typeNextCharacter();
   }, []);
 
-  // Define your skill categories and classes taken here
   const skillCategories = {
-    Technologies: ['React', 'Next.js', 'Spring Boot', 'JavaScript', 'Python', 'LLM Apps'],
-    Languages: ['German', 'Italian', 'English'],
-    Business: ['Sales', 'Marketing', 'Customer Service', 'Entrepreneurship'],
+    Technologies: ['Java', 'Python', 'OCaml', 'C', 'React', 'Next.js', 'Spring Boot', 'Angular', 'JavaScript', 'TypeScript', 'Neo4j', 'PostgreSQL', 'Docker', 'Kubernetes'],
+    Languages: ['Montenegrin', 'English','Italian', 'German'],
+    Business: ['Sales', 'Marketing', 'Customer Service', 'Entrepreneurship', 'Leadership'],
   };
 
   const classesTaken = [
+    'Data Structures and Algorithms',
+    'Applied Linear Algebra, Optimization and Big Data',
+    'Introduction to Data Science',
+    'Abstraction and Design in OCaml',
+    'Introduction to Probability',
+    'Discrete Mathematics',
     'Advanced Data Structures and Algorithms',
-    'Machine Learning Methods',
-    'Deep Learning with Python',
-    'Web Development with React and Next.js',
-    'Blockchain Fundamentals',
-    'Business Development Strategies',
+    'Machine Learning'
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-[#1c0101] to-[#3a0d0d] py-8">
+    <div className="min-h-screen flex flex-col items-center bg-gradient-to-br from-[#1c0101] to-[#3a0d0d] py-8 overflow-x-hidden">
       {/* Main About Section */}
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-full max-w-4xl mx-auto text-center mb-16"
+        className="w-full max-w-4xl mx-auto text-center mb-16 px-4"
       >
         <motion.h1 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className={`${blackOpsOne.className} text-8xl mb-8 text-[#f5f5dc]`}
+          className={`${blackOpsOne.className} text-6xl sm:text-8xl mb-8 text-[#f5f5dc]`}
         >
           About Me
         </motion.h1>
 
-        {/* Typing Intro */}
         <div className="mb-12">
-          <p className={`${robotoMono.className} text-3xl text-[#f5f5dc]`}>
+          <p className={`${robotoMono.className} text-xl sm:text-3xl text-[#f5f5dc]`}>
             {typedText}
             <motion.span 
               className="animate-blink inline-block" 
@@ -78,20 +78,15 @@ const About: React.FC = () => {
         >
           <Link 
             href="/contact"
-            className={`${robotoMono.className} px-12 py-5 bg-[#f5f5dc] text-[#1c0101] text-3xl rounded-full shadow-lg hover:shadow-2xl transition-all duration-300`}
+            className={`${robotoMono.className} px-8 sm:px-12 py-3 sm:py-5 bg-[#f5f5dc] text-[#1c0101] text-xl sm:text-3xl rounded-full shadow-lg hover:shadow-2xl transition-all duration-300`}
           >
             Get in Touch
           </Link>
         </motion.div>
       </motion.div>
 
-      {/* Timeline Section */}
       <Timeline />
-
-      {/* Future Section */}
       <TheFuture />
-
-      {/* Skills Section */}
       <Skills skillCategories={skillCategories} classesTaken={classesTaken} />
     </div>
   );
