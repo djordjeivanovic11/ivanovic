@@ -5,7 +5,7 @@ import { robotoMono } from '@/app/fonts/fonts';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-4 sm:py-6">
+    <footer className="py-4 sm:py-6 bg-[#1c0101] overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
           <div className={`text-xs sm:text-sm ${robotoMono.className} mb-4 sm:mb-0 text-center sm:text-left`}>
