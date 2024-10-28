@@ -54,7 +54,7 @@ const Skills: React.FC<SkillsProps> = ({ skillCategories, classesTaken }) => {
         
         {/* Skill Categories */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
-          {Object.entries(skillCategories).map(([category, skills], categoryIndex) => (
+          {Object.entries(skillCategories).map(([category, skills]) => (
             <motion.div 
               key={category} 
               className="mb-6 sm:mb-8" 
