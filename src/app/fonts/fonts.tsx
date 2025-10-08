@@ -1,11 +1,13 @@
-import { Black_Ops_One, Roboto_Mono} from 'next/font/google';
+import { Inter } from "next/font/google";
 
-export const blackOpsOne = Black_Ops_One({
-  subsets: ['latin'],
-  weight: ['400'],
+// Apple-esque clean typography
+export const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
-export const robotoMono = Roboto_Mono({
-  subsets: ['latin'],
-  weight: ['400'],
-});
+// For backwards compatibility, keep references but map to Inter
+export const blackOpsOne = inter;
+export const robotoMono = inter;

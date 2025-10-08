@@ -3,7 +3,7 @@ import AllProjects from '@/components/Contents/Projects/AllProjects';
 
 const ProjectsPage: React.FC = () => {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#1c0101]">
+    <div className="min-h-screen overflow-hidden bg-[var(--background)]">
       <AllProjects />
     </div>
   );
